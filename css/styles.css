@@ -1,0 +1,716 @@
+/* =======================================================================
+Kane - Responsive App Landing Page
+======================================================================= */
+
+/* --------------------------------------
+=========================================
+GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #313131;
+    line-height: 28px;
+    text-align: center;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
+
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+a {
+    -webkit-transition: all ease 0.25s;
+            transition: all ease 0.25s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+
+
+/* Other fixes*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding-left: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* PRE LOADER */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: img("assets/backgroundimg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: -20px 0 0 -20px;
+}
+
+
+/*---------------------------------------
+   Typography                
+-----------------------------------------*/
+
+/* FONT FACE LOADER */
+@font-face {
+    font-family: 'Lane';
+    src: url('../fonts/lanenar_Lane.eot');
+    src: url('../fonts/lanenar_Lane.eot?#iefix') format('embedded-opentype'), url('../fonts/lanenar_Lane.woff') format('woff'), url('../fonts/lanenar_Lane.ttf') format('truetype'), url('../fonts/lanenar_Lane.svg#Lane') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ 
+    @font-face {
+        font-family: 'Lane';
+        src: url('../fonts/lanenar_Lane.svg#Lane') format('svg');
+    }
+}
+
+/* HEADINGS */
+
+h1,
+h2 {
+    font-family: 'Lane', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.75rem;
+    line-height: 4.688rem;
+}
+
+h2 {
+    font-size: 3.125rem;
+    line-height: 4.063rem;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*---------------------------------------
+   CUSTOM BUTTON              
+-----------------------------------------*/
+
+.standard-button,
+.standard-button2 {
+    font-size: 18px;
+    font-weight: 400 !important;
+    border-radius: 4px !important;
+    text-shadow: 0 !important;
+    color: #ffffff;
+    min-width: 150px;
+    border: none;
+    padding: 16px 25px 16px 25px;
+    margin: 5px;
+    -webkit-transition: all ease 0.25s;
+            transition: all ease 0.25s;
+}
+
+.standard-button:hover,
+.standard-button2:hover {
+    border: none;
+    color: #ffffff;
+    background: #ff9580;
+}
+
+.standard-button i,
+.standard-button2 i {
+    vertical-align: inherit;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+
+/*---------------------------------------
+   TEXTS               
+-----------------------------------------*/
+
+.white-text {
+    color: #ffffff;
+}
+
+.dark-text {
+    color: #272727;
+}
+
+.grey-bg {
+    background: #F7F8FA !important;
+}
+
+
+/*---------------------------------------
+   SECTIONS          
+-----------------------------------------*/
+
+.section-header {
+    padding-bottom: 78px;
+}
+
+.section-header h2 {
+    margin-bottom: 20px;
+}
+
+.section-header .section-description {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*---------------------------------------
+   LINES          
+-----------------------------------------*/
+
+.colored-line {
+    margin: auto;
+    z-index: 1;
+    width: 165px;
+    height: 1px;
+}
+
+.white-line {
+    margin: auto;
+    z-index: 1;
+    width: 165px;
+    height: 1px;
+    background: #ffffff;
+}
+
+.colored-line-left {
+    float: left;
+    z-index: 1;
+    display: block;
+    width: 165px;
+    height: 1px;
+}
+
+/*---------------------------------------
+=========================================
+ **   SECTION STYLES                
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   SECTION:  HOME                 
+-----------------------------------------*/
+
+header{
+    background: url(../images/bg-3.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+    .background {
+        background-attachment: fixed;
+    }   
+}
+
+header .solid-color {
+    min-height: 900px;
+}
+
+header .full-screen {
+    width: 100%;
+    height: 100px;
+}
+
+header .only-logo .navbar {
+    background: none;
+    padding: 60px;
+}
+
+header .only-logo .navbar .navbar-header {
+    float: none;
+}
+
+/* INTRO */
+
+header .home-contents {
+    margin-top: 5%;
+}
+
+header table {
+    background: none; 
+    width: 100%;
+    border-collapse: separate;
+    margin: 0px;
+    height: 420px;
+    vertical-align: middle;
+}
+
+header table td {
+    background: none; 
+    color: white;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+header .intro-section {
+    text-align: left;
+}
+
+header .intro-section .intro {
+    color: #ffffff;
+    margin: 0px;
+}
+
+header .phone-image {
+    max-width: 250px;
+    margin: auto;
+    // margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+header .phone-image img {
+    width: 100%;
+}
+
+
+
+/*---------------------------------------
+   SECTION:  FEATURES                 
+-----------------------------------------*/
+
+.features {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+}
+
+.features .features-left {
+    text-align: right;
+    margin-top: 110px;
+    margin-bottom: 80px;
+}
+
+.features .features-left .icon-container {
+    float: right;
+    margin-left: 20px;
+}
+
+.features .features-right {
+    text-align: left;
+    margin-top: 110px;
+    margin-bottom: 80px;
+}
+
+.features .features-right .icon-container {
+    float: left;
+    margin-right: 20px;
+}
+
+.features .feature {
+    margin-bottom: 40px;
+}
+
+.features .feature .icon-container {
+    display: block;
+    min-height: 120px;
+    margin-top: 5px;
+}
+
+.features .feature .icon-container .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    line-height: 55px;
+    font-size: 18px;
+    text-align: center;
+    -webkit-transition: all ease-in 0.25s;
+            transition: all ease-in 0.25s;
+    -webkit-background-clip: padding-box #000;
+           -moz-background-clip: padding;
+            background-clip: padding-box;
+}
+
+.features .phone-image {
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: -10px;
+}
+
+.features .phone-image img {
+    width: 100%;
+}
+
+
+/*---------------------------------------
+   SECTION:  BRIEF                 
+-----------------------------------------*/
+
+.app-brief {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #F7F8FA;
+}
+
+.app-brief h2 {
+    margin-bottom: 20px;
+}
+
+.app-brief .para1 {
+    margin: 40px auto 10px; 
+    text-align: left;
+    padding: 0 15px;
+    max-width: 900px; 
+
+}
+.app-brief .para2 {
+    padding: 0 15px;
+    margin: auto;
+    text-align: left;
+    max-width: 900px; 
+}
+
+.app-brief .para3 {
+    padding: 0 15px;
+    margin: 10px auto;
+    text-align: left;
+    max-width: 900px; 
+}
+
+
+/*---------------------------------------
+   SECTION:  TEAM           
+-----------------------------------------*/
+
+.team {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background: #FFFFFF;
+}
+
+.team .team-member {
+    padding-bottom: 60px;
+}
+
+.team .team-member .service-icon {
+    font-size: 80px;
+}
+
+.team .team-member h3 {
+    margin-top: 20px;
+}
+
+.team .row {
+    margin-top: -20px;
+}
+
+/** Headshots **/
+
+.headshot {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.headshot.chiara {
+    background: url(../images/Chiara1.png) no-repeat 0 0;
+}
+
+.headshot.sam {
+    background: url(../images/Sam1.png) no-repeat 0 0 ;
+}
+.headshot.stig {
+    background: url(../images/Stig1.png) no-repeat 0 0;
+}
+
+/*---------------------------------------
+   SECTION:  DOWNLOAD                 
+-----------------------------------------*/
+
+.download {
+    color: #ffffff;
+}
+
+.download .solid-color {
+    padding-top: 110px;
+    padding-bottom: 70px;
+}
+
+.download .download-container {
+    padding-bottom: 80px;
+}
+
+.download .subscription-form-container {
+    padding-bottom: 80px;
+}
+
+.download .subscription-form .input-box {
+    height: 57px;
+    padding-left: 20px;
+    width: 320px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #FFF;
+    border: 2px solid #FFF;
+}
+
+.download .subscription-form .input-box:focus, 
+.download .subscription-form .input-box:active {
+    color: #000;
+    font-weight: 400;
+}
+
+.download .subscription-form .subscription-success,
+.download .subscription-form .subscription-error {
+    display: none;
+}
+
+.download h2 {
+    margin-bottom: 30px;
+}
+
+/*---------------------------------------
+   SECTION:  FOOTER                
+-----------------------------------------*/
+
+footer .contact-box {
+    margin-bottom: 78px;
+}
+
+footer .contact-box .contact-button {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    font-size: 30px;
+    line-height: 60px;
+    vertical-align: middle;
+    margin-top: -40px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 3px #ffffff;
+            box-shadow: 0px 0px 0px 3px #ffffff;
+    -webkit-backface-visibility: hidden;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+footer .contact-box .contact-button:hover {
+    color: #ffffff;
+}
+
+footer .contact-box .expanded-contact-form {
+    margin-top: 40px;
+    display: none;
+}
+
+footer .contact-box .expanded-contact-form .success,
+footer .contact-box .expanded-contact-form .error {
+    display: none;
+}
+
+footer .contact-box .expanded-contact-form .input-box {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 50px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+footer .contact-box .expanded-contact-form .textarea-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+footer .contact-box .expanded-contact-form .textarea-box:active {
+    color: #000;
+}
+
+footer .social-icons {
+    margin-top: 30px;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin: 5px;
+}
+
+footer .social-icons li a {
+    font-size: 30px;
+    color: #c2c2c2;
+}
+
+footer .footer-links {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+footer .footer-links li {
+    display: inline-block;
+    margin: 5px;
+}
+
+footer .footer-links li a {
+    color: #808080;
+}
+
+footer .footer-links li a:hover {
+    color: #e3e5ea;
+}
+footer .copyright {
+    color: #c2c2c2;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+/*---------------------------------------
+   SECTION:  FAQ-SECTION                 
+-----------------------------------------*/
+
+.faq-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #F7F8FA;
+}
+
+.faq-section h2 {
+    margin-bottom: 20px;
+}
+
+.faq-section h4 {
+    text-align: left;
+}
+
+.faq-section .first-faq {
+    margin-top: 40px; 
+}
+
+.faq-section .faq {
+    text-align: left;
+    padding: 0 15px;
+    max-width: 900px; 
+    margin: auto auto 20px auto;
+}
+
+.faq-section .empty {
+    margin-top: 40px; 
+}
+/*---------------------------------------
+   SECTION:  PRESS-SECTION                 
+-----------------------------------------*/
+
+.press-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #F7F8FA;
+}
+
+.press-section h2 {
+    margin-bottom: 20px;
+}
+
+.press-section .press {
+    margin: 40px auto 10px; 
+    text-align: left;
+    padding: 0 15px;
+    max-width: 900px; 
+}
+
+/*---------------------------------------
+   SECTION:  TERMS-SECTION                 
+-----------------------------------------*/
+
+.terms-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #F7F8FA;
+}
+
+.terms-section h2 {
+    margin-bottom: 20px;
+}
+
+.terms-section .terms {
+    margin: 20px auto; 
+    text-align: left;
+    padding: 0 15px;
+    max-width: 900px; 
+}

@@ -1,0 +1,147 @@
+/* --------------------------------------
+=========================================
+COLOR : BLUE 
+
+MAIN COLOR CODE: #55d8cb
+
+DEEP COLOR CODE: #005885
+=========================================
+----------------------------------------- */
+
+.solid-color {
+    background: rgba(85, 216, 203, 1);
+}
+
+.standard-button {
+    background: #c2c2c2;
+}
+
+.standard-button2 {
+    background: #c2c2c2;
+}
+
+.standard-button2:hover {
+    background: #ff9580;
+}
+
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+    background: #005885;
+    border-color: inherit;
+}
+
+.colored-line,
+.colored-line-left {
+    background: #55d8cb;
+}
+
+.main-color {
+    color: #55d8cb;
+}
+
+.features .feature:hover .icon-container .icon1 {
+    background: #ff9580;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 2px #ff9580;
+            box-shadow: 0px 0px 0px 2px #ff9580;
+}
+
+.features .feature:hover .icon-container .icon2 {
+    background: #ff9580;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 2px #ff9580;
+            box-shadow: 0px 0px 0px 2px #ff9580;
+}
+
+.features .feature:hover .icon-container .icon3 {
+    background: #ff9580;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 2px #ff9580;
+            box-shadow: 0px 0px 0px 2px #ff9580;
+}
+
+.features .feature:hover .icon-container .icon4 {
+    background: #ff9580;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 2px #ff9580;
+            box-shadow: 0px 0px 0px 2px #ff9580;
+}
+
+.features .feature .icon-container .icon1 {
+    border: 1px solid #c2c2c2;
+    color: #c2c2c2;
+}
+
+.features .feature .icon-container .icon2 {
+    border: 1px solid #c2c2c2;
+    color: #c2c2c2;
+}
+
+.features .feature .icon-container .icon3 {
+    border: 1px solid #c2c2c2;
+    color: #c2c2c2;
+}
+
+.features .feature .icon-container .icon4 {
+    border: 1px solid #c2c2c2;
+    color: #c2c2c2;
+}
+
+.feature-list li i {
+    color: #55d8cb;
+}
+
+.features .phone-image {
+    position: relative;
+}
+
+.features .feature-img {
+    display: none;
+}
+
+.features .feature-img.show {
+    display: block;
+}
+
+.services .single-service .service-icon,
+.services .single-service h3 {
+    color: #55d8cb;
+}
+
+.screenshots .owl-theme .owl-controls .owl-page span {
+    background: #55d8cb;
+}
+
+footer .contact-button {
+    border: 2px solid #ff9580;
+    color: #ff9580;
+}
+
+footer .contact-button:hover {
+    background: #ff9580;
+}
+
+footer .contact-box .expanded-contact-form .input-box:active,
+footer .contact-box .expanded-contact-form .textarea-box:active,
+footer .contact-box .expanded-contact-form .input-box:focus,
+footer .contact-box .expanded-contact-form .textarea-box:focus {
+    border: 1px solid #55d8cb;
+}
+
+footer .social-icons .facebook a:hover {
+    color: #3c599f;
+}
+
+footer .social-icons .twitter a:hover {
+    color: #58ccff;
+}
+
+footer .social-icons .instagram a:hover {
+    color: #8e6051;
+}
